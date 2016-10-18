@@ -1,0 +1,1 @@
+For this assignment we had to recreate a mockup of an etsy search page. We have done something similar to this in the past; the main difference is that this time we have to use JavaScript to get the search results onto the page instead of HTML. 
