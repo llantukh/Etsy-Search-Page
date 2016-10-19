@@ -14,20 +14,44 @@
 
 // 1.) This function should pull the data we need:
 
-function neededData (allData){
-  var image = allData.Images[0].url_75x75;
-  var price = allData.price;
-  var storeName = allData.Shop.shop_name;
-  var storeURL = allData.Shop.shop_url;
-  var itemName = allData.title;
-  var itemURL = allData.url;
+function pullData (allData) {
+// for (var i= 0; i< allData.length; i++)
+//   {
+  var itemName = allData.results[0].title;
+  var itemURL = allData.results[0].url;
+  var price = allData.results[0].price;
+  var image = allData.results[0].Images[0].url_75x75;
+  var storeName = allData.results[0].Shop.shop_name;
+  var storeURL = allData.results[0].Shop.url;
 
   return {
-    image: image,
+    item: itemName,
+    itemLink: itemURL,
     price: price,
+    image: image,
     store: storeName,
     storeLink: storeURL,
-    item: itemName,
-    itemLink: itemURL
   };
+  // console.log(allData);
+// };
 };
+
+
+// var space = `
+//   <div>
+//     <ul>
+//       <li><img src = ""</li>
+//
+//     </ul>
+//   </div>
+//
+//
+// `
+
+// function neededData (pullData){
+//   var list = [];
+//   for (count = 0; count < allData.results.length; count++){
+//   var item = pullData[count];
+//
+//   };
+// };
