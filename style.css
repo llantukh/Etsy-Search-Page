@@ -3,22 +3,44 @@ li {
   list-style: none; }
 
 * {
-  box-sizing: border-box; }
-
-ul {
-  padding-left: 0px; }
+  box-sizing: border-box;
+  text-decoration: none; }
 
 #etsyPage {
-  width: 1092px; }
+  width: 1092px;
+  background: #F4F5F0; }
+
+nav {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 20px;
+  border: 3px solid #E8E9E5;
+  background: #FFFFFF; }
+
+.main {
+  color: #F14F1D;
+  font-size: 30px; }
 
 .right {
-  padding-left: 250px; }
+  padding-left: 400px; }
 
-.content {
-  background: lightgrey; }
+.heading {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-left: 20px;
+  border: 3px solid #E8E9E5;
+  background: #FFFFFF; }
+
+a {
+  margin-left: 12px;
+  color: #3BA7C0; }
 
 .options {
-  background: pink; }
+  width: 275px;
+  margin-left: 20px;
+  padding-left: 0px;
+  line-height: 20px;
+  border: 3px solid #E8E9E5; }
 
 .searchResults {
   background: red; }
@@ -28,6 +50,3 @@ ul {
 
 .footer {
   background: orange; }
-
-.pages {
-  background: grey; }

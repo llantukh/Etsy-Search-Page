@@ -6,27 +6,55 @@ li{
 
 *{
   box-sizing: border-box;
-}
-
-ul{
-  padding-left: 0px;
+  text-decoration: none;
 }
 
 #etsyPage{
   width: 1092px;
+  background: #F4F5F0;
 }
 
+nav {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 20px;
+  border: 3px solid #E8E9E5;
+  background: #FFFFFF;
+}
+
+.main {
+  color: #F14F1D;
+  font-size: 30px;
+}
 
 .right {
-  padding-left: 250px;
+  padding-left: 400px;
+}
+
+.heading {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-left: 20px;
+  border: 3px solid #E8E9E5;
+  background: #FFFFFF;
+}
+
+a {
+  margin-left: 12px;
+  color: #3BA7C0;
 }
 
 .content {
-  background: lightgrey;
+  // background: lightgrey;
 }
 
 .options {
-  background: pink;
+  // background: pink;
+  width: 275px;
+  margin-left: 20px;
+  padding-left: 0px;
+  line-height: 20px;
+  border: 3px solid #E8E9E5;
 }
 
 .searchResults {
@@ -41,10 +69,9 @@ ul{
   background: orange;
 }
 
-.pages {
-  background: grey;
-}
-
-// nav {
-// float: left;
+// .page {
+//   background: grey;
+//   padding: 10px;
+//   margin-left: 20px;
+//   border: 1px solid black;
 // }
