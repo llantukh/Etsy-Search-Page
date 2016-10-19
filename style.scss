@@ -1,3 +1,26 @@
+/* general rules for entire page */
+
+li{
+  list-style: none;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+ul{
+  padding-left: 0px;
+}
+
+#etsyPage{
+  width: 1092px;
+}
+
+
+.right {
+  padding-left: 250px;
+}
+
 .content {
   background: lightgrey;
 }
