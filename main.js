@@ -12,7 +12,7 @@
 // 2.) Then I will write a for loop to generate the html to get the info on the page.
 
 
-// 1.) This function should pull the data we need:
+// pull the data we need:
 
 function pullData (allData){
   var dataArray = [];
@@ -25,6 +25,7 @@ function pullData (allData){
   var storeName = allData.results[i].Shop.shop_name;
   var storeURL = allData.results[i].Shop.url;
 
+// get the data structured how you want it on the page:
 
   var resultHTML = `
     <div>
@@ -33,6 +34,8 @@ function pullData (allData){
       <span class = "store"> <a href = ${storeURL}>${storeName} </a></span>
       <span class = "price"> $${price} <span>
     </div>`;
+
+// get the data onto the page:
 
     $(".searchResults").append(resultHTML);
 
