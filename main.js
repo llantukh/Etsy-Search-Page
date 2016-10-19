@@ -14,44 +14,29 @@
 
 // 1.) This function should pull the data we need:
 
-function pullData (allData) {
-// for (var i= 0; i< allData.length; i++)
-//   {
-  var itemName = allData.results[0].title;
-  var itemURL = allData.results[0].url;
-  var price = allData.results[0].price;
-  var image = allData.results[0].Images[0].url_75x75;
-  var storeName = allData.results[0].Shop.shop_name;
-  var storeURL = allData.results[0].Shop.url;
+function pullData (allData){
+  var dataArray = [];
+  for (var i= 0; i< allData.results.length; i++){
 
-  return {
-    item: itemName,
-    itemLink: itemURL,
-    price: price,
-    image: image,
-    store: storeName,
-    storeLink: storeURL,
-  };
-  // console.log(allData);
-// };
+  var itemName = allData.results[i].title;
+  var itemURL = allData.results[i].url;
+  var price = allData.results[i].price;
+  var image = allData.results[i].Images[0].url_fullxfull;
+  var storeName = allData.results[i].Shop.shop_name;
+  var storeURL = allData.results[i].Shop.url;
+
+
+  var resultHTML = `
+    <div>
+      <img src = ${image}>
+      <span class = "item"> <a href = ${itemURL}>${itemName} </a></span>
+      <span class = "store"> <a href = ${storeURL}>${storeName} </a></span>
+      <span class = "price"> $${price} <span>
+    </div>`;
+
+    $(".searchResults").append(resultHTML);
+
+}
 };
 
-
-// var space = `
-//   <div>
-//     <ul>
-//       <li><img src = ""</li>
-//
-//     </ul>
-//   </div>
-//
-//
-// `
-
-// function neededData (pullData){
-//   var list = [];
-//   for (count = 0; count < allData.results.length; count++){
-//   var item = pullData[count];
-//
-//   };
-// };
+pullData(allData);
