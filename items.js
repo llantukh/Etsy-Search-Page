@@ -1,4 +1,4 @@
-var data = {
+var allData = {
 "count": 37293,
 "results": [
 {
