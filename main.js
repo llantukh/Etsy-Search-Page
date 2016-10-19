@@ -8,24 +8,26 @@
 // -Item Name
 // -Item link
 //
-// I will write a function that pulls this data for me.
-// Then I will write a for loop to generate the html to get the info on the page.
+// 1.) I will write a function that pulls this data for me.
+// 2.) Then I will write a for loop to generate the html to get the info on the page.
 
 
-function neededData (etsyItems){
-  var image =
-  var price =
-  var storeName =
-  var storeURL =
-  var itemName =
-  var itemURL =
+// 1.) This function should pull the data we need:
+
+function neededData (allData){
+  var image = allData.Images[0].url_75x75;
+  var price = allData.price;
+  var storeName = allData.Shop.shop_name;
+  var storeURL = allData.Shop.shop_url;
+  var itemName = allData.title;
+  var itemURL = allData.url;
 
   return {
     image: image,
     price: price,
     store: storeName,
-    store link: storeURL,
+    storeLink: storeURL,
     item: itemName,
-    item link: itemURL
+    itemLink: itemURL
   };
 };
