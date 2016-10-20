@@ -29,21 +29,52 @@ nav {
   padding-bottom: 15px;
   margin-left: 20px;
   border: 3px solid #E8E9E5;
-  background: #FFFFFF; }
+  background: #FFFFFF;
+  font-size: 12px; }
 
 a {
   margin-left: 12px;
   color: #3BA7C0; }
 
+.content {
+  margin-right: 0px; }
+
+ul {
+  padding-left: 20px; }
+
 .options {
-  width: 275px;
+  width: 170px;
   margin-left: 20px;
-  padding-left: 0px;
+  margin-right: 0px;
   line-height: 20px;
-  border: 3px solid #E8E9E5; }
+  border: 3px solid #E8E9E5;
+  font-size: 12px;
+  display: inline-block; }
+
+.allCat {
+  padding-left: 10px; }
 
 .searchResults {
-  background: red; }
+  width: 892px;
+  float: right; }
+
+.singleItem {
+  border: 1px solid black;
+  width: 200px;
+  height: 180px;
+  float: left;
+  font-size: 10px;
+  margin: 10px; }
+
+img {
+  height: 150px;
+  width: 200px; }
+
+.singleItem > div {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-left: 0px; }
 
 .related {
   background: green; }

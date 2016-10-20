@@ -14,6 +14,8 @@ li{
   background: #F4F5F0;
 }
 
+// top line with etsy, two buttons, login
+
 nav {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -31,12 +33,15 @@ nav {
   padding-left: 400px;
 }
 
+// second part of the top, has navigating options
+
 .heading {
   padding-top: 15px;
   padding-bottom: 15px;
   margin-left: 20px;
   border: 3px solid #E8E9E5;
   background: #FFFFFF;
+  font-size: 12px;
 }
 
 a {
@@ -44,22 +49,70 @@ a {
   color: #3BA7C0;
 }
 
+// main part of the page
+
 .content {
-  // background: lightgrey;
+  margin-right: 0px;
+}
+
+// left side bar
+
+ul {
+  padding-left: 20px;
 }
 
 .options {
-  // background: pink;
-  width: 275px;
+  width: 170px;
   margin-left: 20px;
-  padding-left: 0px;
+  margin-right: 0px;
   line-height: 20px;
   border: 3px solid #E8E9E5;
+  font-size: 12px;
+  display: inline-block;
 }
 
-.searchResults {
-  background: red;
+.allCat {
+  padding-left: 10px;
+  // margin-bottom: : 0px;
 }
+
+
+// search options that get pulled from js
+
+.searchResults {
+  width: 892px;
+  float: right;
+  // clear: both;
+}
+
+.singleItem {
+  border: 1px solid black;
+  width: 200px;
+  height: 180px;
+  float: left;
+  font-size: 10px;
+  margin: 10px;
+}
+
+img {
+  height: 150px;
+  width: 200px;
+}
+
+.singleItem > div {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-left: 0px;
+}
+
+
+
+// .overflow-ellipsis {
+//   text-overflow: ellipsis;
+// }
+
+// bottom section of the page
 
 .related {
   background: green;
@@ -68,6 +121,8 @@ a {
 .footer {
   background: orange;
 }
+
+
 
 // .page {
 //   background: grey;
