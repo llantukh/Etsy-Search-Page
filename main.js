@@ -31,9 +31,15 @@ function pullData (allData){
   var resultHTML = `
     <div class = "singleItem">
       <img src = ${image}>
-      <span class = "item"> <a href = ${itemURL}>${itemName} </a></span>
-      <span class = "store"> <a href = ${storeURL}>${storeName} </a></span>
-      <span class = "price"> $${price} <span>
+      <div>
+        <a href = ${itemURL}>
+        ${itemName}
+        </a>
+         <div>
+          <span class = "store"> <a href = ${storeURL}>${storeName} </a></span>
+          <span class = "price"> $${price} <span>
+        </div>
+      </div>
     </div>`;
 
 // get the data onto the page:
@@ -45,5 +51,5 @@ function pullData (allData){
 
 
 // run the function we just wrote.
- 
+
 pullData(allData);
