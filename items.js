@@ -1566,7 +1566,7 @@ var allData = {
 "user_id": 7421319,
 "category_id": 68887494,
 "title": "Personalized Rocks Glasses for Wedding Party, Bachelor Party, Groomsmen Gift and Reunions",
-"description": "Our", 
+"description": "Our",
 "creation_tsz": 1476809074,
 "ending_tsz": 1487439874,
 "original_creation_tsz": 1438750645,
@@ -4574,4 +4574,4 @@ var allData = {
 "effective_page": 1,
 "next_page": 2
 }
-}
+};

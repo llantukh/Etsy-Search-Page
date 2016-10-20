@@ -14,16 +14,16 @@
 
 // pull the data we need:
 
-function pullData (allData){
+function pullData (data){
   var dataArray = [];
-  for (var i= 0; i< allData.results.length; i++){
+  for (var i= 0; i< data.results.length; i++){
 
-  var itemName = allData.results[i].title;
-  var itemURL = allData.results[i].url;
-  var price = allData.results[i].price;
-  var image = allData.results[i].Images[0].url_fullxfull;
-  var storeName = allData.results[i].Shop.shop_name;
-  var storeURL = allData.results[i].Shop.url;
+  var itemName = data.results[i].title;
+  var itemURL = data.results[i].url;
+  var price = data.results[i].price;
+  var image = data.results[i].Images[0].url_fullxfull;
+  var storeName = data.results[i].Shop.shop_name;
+  var storeURL = data.results[i].Shop.url;
 
 
 // get the data structured how you want it on the page:
