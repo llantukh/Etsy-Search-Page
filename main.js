@@ -25,10 +25,11 @@ function pullData (allData){
   var storeName = allData.results[i].Shop.shop_name;
   var storeURL = allData.results[i].Shop.url;
 
+
 // get the data structured how you want it on the page:
 
   var resultHTML = `
-    <div>
+    <div class = "singleItem">
       <img src = ${image}>
       <span class = "item"> <a href = ${itemURL}>${itemName} </a></span>
       <span class = "store"> <a href = ${storeURL}>${storeName} </a></span>
@@ -42,4 +43,7 @@ function pullData (allData){
 }
 };
 
+
+// run the function we just wrote.
+ 
 pullData(allData);
