@@ -1,4 +1,5 @@
-/* general rules for entire page */
+/* general rules for entire page.
+page sections are defined in the html */
 li {
   list-style: none; }
 
@@ -12,10 +13,11 @@ li {
   overflow: auto; }
 
 nav {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin-left: 20px;
   border: 3px solid #E8E9E5;
+  border-bottom: 0px;
   background: #FFFFFF; }
 
 .final {
@@ -26,26 +28,41 @@ nav {
 .main {
   color: #F14F1D;
   font-size: 30px;
-  margin-left: 20px; }
+  margin-left: 20px;
+  font-family: 'Tenor Sans', sans-serif; }
 
 #searchBar {
   height: 30px;
-  margin-right: 0px;
   font-size: 12px;
-  margin-left: 12px; }
+  margin-left: 12px;
+  width: 300px; }
 
 .button1 {
   background: #3BA7C0;
   color: white;
-  font-size: 10px;
+  font-size: 12px;
   padding: 15px;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  margin-left: 0px; }
+  padding-top: 8.8px;
+  padding-bottom: 7.5px;
+  border: none;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  margin-left: -6px; }
 
 .right {
-  padding-left: 430px;
-  color: #3BA7C0; }
+  padding-left: 320px;
+  color: #3BA7C0;
+  font-size: 12px; }
+
+.button {
+  background: white;
+  color: #3BA7C0;
+  border: 2px solid #3BA7C0;
+  border-radius: 4px;
+  margin-left: 10px;
+  font-size: 12px;
+  padding-top: 7px;
+  padding-bottom: 7px; }
 
 .cart {
   height: 15px;
@@ -66,6 +83,21 @@ a {
   margin-left: 12px;
   color: #3BA7C0; }
 
+.displayResults {
+  margin-top: 15px;
+  margin-bottom: 0px;
+  margin-left: 20px;
+  font-size: 10px; }
+
+.whiskeyResults {
+  margin-left: 110px;
+  color: #3BA7C0;
+  display: inline-block; }
+
+.whiskey {
+  color: black;
+  display: inline-block; }
+
 .content {
   margin-right: 0px; }
 
@@ -79,6 +111,7 @@ li {
   width: 170px;
   margin-left: 20px;
   margin-right: 0px;
+  margin-top: 10px;
   line-height: 20px;
   border: 3px solid #E8E9E5;
   font-size: 12px;
@@ -91,17 +124,39 @@ li {
   width: 892px;
   float: right; }
 
+.mouseOver {
+  position: absolute;
+  z-index: 2;
+  margin-top: 2px;
+  margin-left: 160px;
+  visibility: hidden; }
+
+.singleItem:hover .mouseOver {
+  visibility: visible; }
+
+.hamburger {
+  height: 15px;
+  width: 15px; }
+
+.heart {
+  height: 15px;
+  width: 15px; }
+
 .singleItem {
   border: 1px solid lightgrey;
   width: 200px;
   height: 180px;
   float: left;
   font-size: 10px;
-  margin: 10px; }
+  margin: 10px;
+  position: relative;
+  z-index: 1; }
 
-img {
+.resultImage {
   height: 150px;
-  width: 200px; }
+  width: 200px;
+  margin-left: -3px;
+  margin-top: -1px; }
 
 .singleItem > div {
   text-overflow: ellipsis;
@@ -124,9 +179,3 @@ img {
 .price {
   float: right;
   color: #90C966; }
-
-.related {
-  background: green; }
-
-.footer {
-  background: orange; }

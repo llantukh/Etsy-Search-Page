@@ -35,7 +35,12 @@ function pullData (data){
 
   var resultHTML = `
     <div class = "singleItem">
-      <img src = ${image}>
+    <div class="mouseOver">
+      <span><img class = "heart" src = "assets/heart.png"><span>
+      <span><img class = "hamburger" src = "assets/hamburger.png"><span>
+    </div>
+      <a class = "realLink1" href = ${itemURL}>
+      <img class = "resultImage" src = ${image}>
       <div>
         <a class = "realLink1" href = ${itemURL}>
         ${itemName}
