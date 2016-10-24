@@ -8,3 +8,5 @@ Here is my gh-pages link to the project:
 https://llantukh.github.io/Etsy-Search-Page/
 
 So it's been a week and I have been working on this project a little bit here and there. All of my CSS is done except for the hover event. I'm not exactly sure what it's supposed to do. Hopefully I can figure that out real quick and resubmit this.
+
+...I figured it out!!! Project complete.
