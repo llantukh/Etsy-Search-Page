@@ -14,8 +14,13 @@
 
 // pull the data we need:
 
+// you can do this instead of the for loop:
+// data.map(function(item){
+//   `<div>${item.title}</div>`
+// })
+// then you would enter item.title or whatever into the resultHtml. his way is cleaner.
+
 function pullData (data){
-  var dataArray = [];
   for (var i= 0; i< data.results.length; i++){
 
   var itemName = data.results[i].title;
@@ -32,11 +37,11 @@ function pullData (data){
     <div class = "singleItem">
       <img src = ${image}>
       <div>
-        <a href = ${itemURL}>
+        <a class = "realLink1" href = ${itemURL}>
         ${itemName}
         </a>
-         <div>
-          <span class = "store"> <a href = ${storeURL}>${storeName} </a></span>
+         <div class = "finalDetails">
+          <span class = "store"> <a class = "realLink" href = ${storeURL}>${storeName} </a></span>
           <span class = "price"> $${price} <span>
         </div>
       </div>

@@ -8,7 +8,8 @@ li {
 
 #etsyPage {
   width: 1092px;
-  background: #F4F5F0; }
+  background: #F4F5F0;
+  overflow: auto; }
 
 nav {
   padding-top: 20px;
@@ -17,12 +18,38 @@ nav {
   border: 3px solid #E8E9E5;
   background: #FFFFFF; }
 
+.final {
+  float: right;
+  margin-right: 30px;
+  text-align: center; }
+
 .main {
   color: #F14F1D;
-  font-size: 30px; }
+  font-size: 30px;
+  margin-left: 20px; }
+
+#searchBar {
+  height: 30px;
+  margin-right: 0px;
+  font-size: 12px;
+  margin-left: 12px; }
+
+.button1 {
+  background: #3BA7C0;
+  color: white;
+  font-size: 10px;
+  padding: 15px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-left: 0px; }
 
 .right {
-  padding-left: 400px; }
+  padding-left: 430px;
+  color: #3BA7C0; }
+
+.cart {
+  height: 15px;
+  width: 15px; }
 
 .heading {
   padding-top: 15px;
@@ -32,6 +59,9 @@ nav {
   background: #FFFFFF;
   font-size: 12px; }
 
+.headinglist {
+  color: grey; }
+
 a {
   margin-left: 12px;
   color: #3BA7C0; }
@@ -40,7 +70,10 @@ a {
   margin-right: 0px; }
 
 ul {
-  padding-left: 20px; }
+  padding-left: 15px; }
+
+li {
+  color: #3BA7C0; }
 
 .options {
   width: 170px;
@@ -59,7 +92,7 @@ ul {
   float: right; }
 
 .singleItem {
-  border: 1px solid black;
+  border: 1px solid lightgrey;
   width: 200px;
   height: 180px;
   float: left;
@@ -75,6 +108,22 @@ img {
   overflow: hidden;
   white-space: nowrap;
   padding-left: 0px; }
+
+.finalDetails {
+  padding-right: 2px; }
+
+.realLink1 {
+  margin-left: 2px;
+  color: grey;
+  line-height: 1.5; }
+
+.realLink {
+  margin-left: 2px;
+  color: lightgrey; }
+
+.price {
+  float: right;
+  color: #90C966; }
 
 .related {
   background: green; }

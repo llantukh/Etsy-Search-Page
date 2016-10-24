@@ -6,34 +6,41 @@
   <link rel="stylesheet" href="normalize.css">
 </head>
 
-<body id = "etsyPage">
+<body>
+  <div id = "etsyPage">
+
+<!-- section 1: top box with search input box and button -->
   <nav>
     <span class = "main">Etsy</span>
-    <input type = "text" value = "whiskey" id = "searchBar"/>
-    <input type = "submit" value = "Search" class = "button"/>
+    <input type = "text" placeholder = "whiskey" id = "searchBar"/>
+    <input type = "submit" value = "Search" class = "button1"/>
     <span class = "right"><a href = "#">Sell on Etsy</a><span>
     <span><a href = "#">Register</a><span>
     <input type = "submit" value = "Sign In" class = "button"/>
-    <span>Cart and img<span>
+      <div class = "final">
+        <span><img class = "cart" src = "assets/cart.png"><span><br><span>Cart<span>
+      </div>
   </nav>
 
+<!-- section2: department options -->
   <div class = "heading">
-    <span><a href = "#">Clothing & Accessories</a><span>
-    <span><a href = "#">Jewelry</a><span>
-    <span><a href = "#">Craft Supplies & Tools</a><span>
-    <span><a href = "#">Weddings</a><span>
-    <span><a href = "#">Entertainment</a><span>
-    <span><a href = "#">Home & Living</a><span>
-    <span><a href = "#">Kids & Baby</a><span>
-    <span><a href = "#">Vintage</a><span>
+    <span><a class = "headinglist" href = "#">Clothing & Accessories</a><span>
+    <span><a class = "headinglist" href = "#">Jewelry</a><span>
+    <span><a class = "headinglist" href = "#">Craft Supplies & Tools</a><span>
+    <span><a class = "headinglist" href = "#">Weddings</a><span>
+    <span><a class = "headinglist" href = "#">Entertainment</a><span>
+    <span><a class = "headinglist" href = "#">Home & Living</a><span>
+    <span><a class = "headinglist" href = "#">Kids & Baby</a><span>
+    <span><a class = "headinglist" href = "#">Vintage</a><span>
   </div>
 
   <div class="content">
 
+<!-- section 3: left navigation section -->
     <div class="options">
       <p class = "allCat">All Categories</p>
       <ul>
-        <li>Home & Living</li>
+        <li >Home & Living</li>
         <li>Art & Collectibles</li>
         <li>Weddings</li>
         <li>Clothing</li>
@@ -51,9 +58,11 @@
       </ul>
     </div>
 
+<!-- section 4: search options that get pulled from js are rendered here: -->
     <div class="searchResults">
     </div>
 
+<!-- section 5: bottom section under results -->
     <div class="related">
     </div>
 
@@ -65,7 +74,7 @@
     </div> -->
 
   </div>
-
+</div>
   <script src = "jquery.js"></script>
   <script src = "items.js"></script>
   <script src = "main.js"></script>
